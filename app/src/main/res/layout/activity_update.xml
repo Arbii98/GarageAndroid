@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg3"
+    tools:context=".AddActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/titleEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:fontFamily="sans-serif"
+                android:text="Modifier une voiture"
+                android:textSize="35dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/marqueEdit"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/titleEdit"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:hint="Marque" />
+
+            <EditText
+                android:id="@+id/modeleEdit"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/marqueEdit"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:hint="Modele" />
+
+            <EditText
+                android:id="@+id/matriculeEdit"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/modeleEdit"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:hint="Matricule" />
+
+            <EditText
+                android:id="@+id/proprietaireEdit"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/matriculeEdit"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:hint="Nom et prénom proprietaire" />
+
+            <EditText
+                android:id="@+id/telephoneEdit"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/proprietaireEdit"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:hint="Telephone" />
+
+            <!--<EditText
+                android:id="@+id/cout"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/proprietaire"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:hint="Cout" />
+
+            <EditText
+                android:id="@+id/panne"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/cout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:hint="Panne" />
+
+            <TextView
+                android:id="@+id/label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/panne"
+                android:layout_marginTop="20dp"
+                android:text="Date de réparation"
+                android:textSize="20dp" />
+
+            <DatePicker
+                android:id="@+id/date"
+                android:layout_width="350dp"
+                android:layout_height="500dp"
+                android:layout_below="@id/label"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:datePickerMode="spinner"
+                android:calendarViewShown="false"/>-->
+
+
+            <Button
+                android:id="@+id/edit_btn"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/proprietaireEdit"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="100dp"
+                android:background="@drawable/round_corners"
+                android:text="Modifier"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/delete_btn"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/edit_btn"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/round_corners"
+                android:text="Supprimer"
+                android:textColor="#ff0000"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/reparer_btn"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/delete_btn"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/round_corners"
+                android:text="Réparer"
+                android:textColor="#04D672"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/idVoiture"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/delete_btn"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:hint="Identifiant"
+                android:visibility="invisible" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
